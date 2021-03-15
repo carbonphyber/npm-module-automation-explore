@@ -9,3 +9,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: wagoid/commitlint-github-action@v2
+      - name: Install modules
+        run: npm ci
+      - name: Run tests
+        run: npm run test
