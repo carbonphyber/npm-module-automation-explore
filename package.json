@@ -1,0 +1,30 @@
+{
+  "name": "npm-module-automation-explore",
+  "version": "0.1.0",
+  "description": "A test repo to explore maximum CICD and GitHub automation for a JavaScript NPM repo. This repo aims to streamline enforcement of reporting issues; managing code submissions (PRs); maintaining code style, quality, and security; and with the potential to be used as a template for other GitHub-based JavaScript/NPM projects.",
+  "main": "src/index.js",
+  "scripts": {
+    "commitlint": "commitlint",
+    "commitmsg": "commitlint -x @commitlint/config-conventional -E GIT_PARAMS",
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carbonphyber/npm-module-automation-explore.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "CarbonPhyber",
+    "url": "https://github.com/carbonphyber/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carbonphyber/npm-module-automation-explore/issues"
+  },
+  "homepage": "https://github.com/carbonphyber/npm-module-automation-explore#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1"
+  }
+}
