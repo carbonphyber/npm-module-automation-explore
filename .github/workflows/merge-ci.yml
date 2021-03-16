@@ -1,0 +1,37 @@
+name: Lint Commit Messages
+on:
+  # Trigger the Action only on merge into main branch:
+  # https://github.community/t/trigger-workflow-only-on-pull-request-merge/17359
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Install modules
+        run: npm ci
+      - name: (Re)generate CHANGELOG.md
+        run: |
+          npm run changelog
+      - name: Commit any repo changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add CHANGELOG.md
+          if [[ -n "$(git status -s -- CHANGELOG.md)" ]]; then
+            PACKAGE_VERSION=`node -e 'console.log(require("./package").version)'`
+            RELEASE_MESSAGE="chore: release $PACKAGE_VERSION"
+            git commit -m "$RELEASE_MESSAGE"
+            git push
+            git tag -a "v$VERSION" -m "$RELEASE_MESSAGE"
+            git push origin "v$VERSION"
+          fi
