@@ -1,0 +1,14 @@
+## 0.1.0 (2021-03-16)
+
+
+### Features
+
+* add Conventiontional Commits linter and GitHub Action ([4ab5092](https://github.com/carbonphyber/npm-module-automation-explore/commit/4ab5092a5ef6e7632ec9ac320096d22e116d7869))
+* **ci:** add CHANGELOG.md generation, commit, and tag upon merge into main branch ([e63f057](https://github.com/carbonphyber/npm-module-automation-explore/commit/e63f057b8a3af4ca2bae2a34f6d239e26d2efcbb))
+* **tests:** add Jest test framework with unit tests and 2 commands ([0198847](https://github.com/carbonphyber/npm-module-automation-explore/commit/0198847b978f3b4918d793d3bb48cac9e5063154))
+
+
+### Bug Fixes
+
+* **ci:** rename PullRequest CI workflow ([883ad68](https://github.com/carbonphyber/npm-module-automation-explore/commit/883ad68e0e27105957c767aece0a941fefb14b32))
+
