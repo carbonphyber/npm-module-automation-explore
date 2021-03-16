@@ -32,6 +32,6 @@ jobs:
             RELEASE_MESSAGE="chore: release $PACKAGE_VERSION"
             git commit -m "$RELEASE_MESSAGE"
             git push
-            git tag -a "v$VERSION" -m "$RELEASE_MESSAGE"
-            git push origin "v$VERSION"
+            git tag -a "v$PACKAGE_VERSION" -m "$RELEASE_MESSAGE"
+            git push origin "v$PACKAGE_VERSION"
           fi
