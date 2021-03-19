@@ -1,12 +1,12 @@
 {
   "branches": [
     {
-      "name": "master"
+      "name": "main"
     }
   ],
   "plugins": ["@semantic-release/commit-analyzer", "@semantic-release/release-notes-generator", "@semantic-release/github"],
   "release": {
-    "branches": ["master", "main"]
+    "branches": ["main"]
   },
   "tagFormat": "v${version}"
 }
