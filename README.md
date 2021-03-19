@@ -1,7 +1,7 @@
 # NPM Module Automation Explore
 A test repo to explore maximum CICD and GitHub automation for a JavaScript NPM repo. This repo aims to streamline enforcement of reporting issues; managing code submissions (PRs); maintaining code style, quality, and security; and with the potential to be used as a template for other GitHub-based JavaScript/NPM projects.
 
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+![release CI status](https://github.com/carbonphyber/npm-module-automation-explore/actions/workflows/ci-merge.yml/badge.svg) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 ## Changelog, Versioning, and Release CI
 NPM uses [Semantic Release](https://github.com/semantic-release/semantic-release).
