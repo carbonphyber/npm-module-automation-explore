@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/carbonphyber/npm-module-automation-explore#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
     "jest": "^26.6.3",
     "semantic-release": "^17.4.2"
   }
