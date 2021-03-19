@@ -1,14 +1,11 @@
 # NPM Module Automation Explore
 A test repo to explore maximum CICD and GitHub automation for a JavaScript NPM repo. This repo aims to streamline enforcement of reporting issues; managing code submissions (PRs); maintaining code style, quality, and security; and with the potential to be used as a template for other GitHub-based JavaScript/NPM projects.
 
-## Versioning
-NPM uses [Semantic Versioning](https://docs.npmjs.com/about-semantic-versioning).
-This repo requires all commit messages follow [Conventional Commits](https://www.conventionalcommits.org/) (enforced using [a GitHub Action](https://github.com/marketplace/actions/commit-linter)). This commit message rigidity allows the repo to automatically know how to increment the Release version number (for both GitHub Releases and the NPM version number) and to auto-generate the `CHANGELOG.md` file.
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-## Changelog
-A useful feature of [Conventional Commits](https://www.conventionalcommits.org/) is that it can deterministically generate a `CHANGELOG.md` file (in addition to the other benefits) entirely from commit messages which adhere to the convention.
-
-This repo uses a GitHub Action to regenerate the `CHANGELOG.md` file on every push into the `main` branch then commit the CHANGELOG changes to the repo.
+## Changelog, Versioning, and Release CI
+NPM uses [Semantic Release](https://github.com/semantic-release/semantic-release).
+This repo requires all commit messages follow [Conventional Commits](https://www.conventionalcommits.org/) (enforced using [a GitHub Action](https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md)). This commit message rigidity allows the repo to automatically know how to increment the Release version number (for both GitHub Releases and the NPM version number) and to auto-generate the `CHANGELOG.md` file.
 
 ## Testing
 This repo uses Jest for unit testing.
