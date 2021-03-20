@@ -1,3 +1,10 @@
+## [0.1.12](https://github.com/carbonphyber/npm-module-automation-explore/compare/v0.1.11...v0.1.12) (2021-03-20)
+
+
+### Bug Fixes
+
+* **ci:** add --dry-run upon ci-pullrequest.yml; install @semantic-release/npm ([d994597](https://github.com/carbonphyber/npm-module-automation-explore/commit/d9945973d50f4fba46f897ad1461e596a918afa7))
+
 ## [0.1.11](https://github.com/carbonphyber/npm-module-automation-explore/compare/v0.1.10...v0.1.11) (2021-03-20)
 
 
