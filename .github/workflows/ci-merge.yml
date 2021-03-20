@@ -46,7 +46,8 @@ jobs:
       - name: Update CHANGELOG
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release --plugins "@semantic-release/release-notes-generator"
+          # NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release --generate-notes
       - name: Logging
         run: git status && git diff
       # - name: Commit any CHANGELOG.md changes
