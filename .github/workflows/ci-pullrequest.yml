@@ -38,4 +38,4 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Logging
-        cmd: git status && git diff
+        run: git status && git diff
