@@ -2,6 +2,28 @@ name: Lint Commit Messages
 on: [pull_request]
 
 jobs:
+  tests:
+    strategy:
+      matrix:
+        node-version:
+          - 10
+          - 12
+          - 14
+        os:
+          - ubuntu-latest
+    runs-on: "${{ matrix.os }}"
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: "Install NodeJS ${{ matrix.node-version }}"
+        uses: actions/setup-node@v2
+        with:
+          node-version: "${{ matrix.node-version }}"
+      - name: Install dependencies
+        run: npm ci
+      - name: Test
+        run: npm run test
   commitlint:
     runs-on: ubuntu-latest
     steps:
@@ -15,5 +37,5 @@ jobs:
           node-version: '14'
       - name: Install dependencies
         run: npm ci
-      - name: Tests
-        run: npm run test
+      - name: Logging
+        cmd: git status && git diff
