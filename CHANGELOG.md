@@ -1,3 +1,10 @@
+## [0.1.11](https://github.com/carbonphyber/npm-module-automation-explore/compare/v0.1.10...v0.1.11) (2021-03-20)
+
+
+### Bug Fixes
+
+* **ci:** fix typo in ci-pullrequest.yml ([8281f43](https://github.com/carbonphyber/npm-module-automation-explore/commit/8281f43b6423e733225a71964858f40d0e142f8d))
+
 ## [0.1.10](https://github.com/carbonphyber/npm-module-automation-explore/compare/v0.1.9...v0.1.10) (2021-03-20)
 
 
