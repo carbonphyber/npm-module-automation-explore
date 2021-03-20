@@ -13,12 +13,8 @@
         "changelogFile": "CHANGELOG.md"
       }
     ],
-    [
-      "@semantic-release/github",
-      {
-        "assets": ["CHANGELOG.md"]
-      }
-    ]
+    "@semantic-release/git",
+    "@semantic-release/github"
   ],
   "release": {
     "branches": ["main"]
