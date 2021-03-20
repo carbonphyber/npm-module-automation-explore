@@ -1,3 +1,10 @@
+## [0.1.10](https://github.com/carbonphyber/npm-module-automation-explore/compare/v0.1.9...v0.1.10) (2021-03-20)
+
+
+### Bug Fixes
+
+* **npm:** removing redundant steps in ci-merge.yml ([f2ccd13](https://github.com/carbonphyber/npm-module-automation-explore/commit/f2ccd13170d351b43be30024b91d8373e597e4b0))
+
 ## 0.1.0 (2021-03-16)
 
 
