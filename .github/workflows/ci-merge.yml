@@ -49,17 +49,17 @@ jobs:
         run: npx semantic-release --plugins "@semantic-release/release-notes-generator"
       - name: Logging
         run: git status && git diff
-      - name: Commit any CHANGELOG.md changes
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add CHANGELOG.md
-          if [[ -n "$(git status -s -- CHANGELOG.md)" ]]; then
-            PACKAGE_VERSION=`node -e 'console.log(require("./package").version)'`
-            RELEASE_MESSAGE="chore: update CHANGELOG.md after $PACKAGE_VERSION"
-            git commit -m "$RELEASE_MESSAGE"
-            git push
-          fi
+      # - name: Commit any CHANGELOG.md changes
+      #   run: |
+      #     git config user.name github-actions
+      #     git config user.email github-actions@github.com
+      #     git add CHANGELOG.md
+      #     if [[ -n "$(git status -s -- CHANGELOG.md)" ]]; then
+      #       PACKAGE_VERSION=`node -e 'console.log(require("./package").version)'`
+      #       RELEASE_MESSAGE="chore: update CHANGELOG.md after $PACKAGE_VERSION"
+      #       git commit -m "$RELEASE_MESSAGE"
+      #       git push
+      #     fi
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
