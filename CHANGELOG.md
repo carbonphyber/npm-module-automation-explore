@@ -1,3 +1,11 @@
+## [0.1.13](https://github.com/carbonphyber/npm-module-automation-explore/compare/v0.1.12...v0.1.13) (2023-06-23)
+
+
+### Bug Fixes
+
+* update semantic-release and @semantic-release/* packages to newest version ([e05aa14](https://github.com/carbonphyber/npm-module-automation-explore/commit/e05aa1483128c7b851db0692be06c8c7aaaecf37))
+* upgrade to require Node v18.x+ ([b56ca21](https://github.com/carbonphyber/npm-module-automation-explore/commit/b56ca2155c092625018518c2a01220a3b1fdb029))
+
 ## [0.1.12](https://github.com/carbonphyber/npm-module-automation-explore/compare/v0.1.11...v0.1.12) (2021-03-20)
 
 
