@@ -1,3 +1,10 @@
+## [0.1.15](https://github.com/carbonphyber/npm-module-automation-explore/compare/v0.1.14...v0.1.15) (2026-11-19)
+
+### Bug Fixes
+
+* **docs:** Update the README.md to link to the GitHub Releases page of this repo ([8fb3399](https://github.com/carbonphyber/npm-module-automation-explore/commit/8fb339912b6d3b1a1765ef12142e03e2079d0b74))
+* **docs:** Update the README.md to reflect the GitHub Actions logic ([6c71512](https://github.com/carbonphyber/npm-module-automation-explore/commit/6c71512076a4bb942e08e1fadbca3637f9734111))
+
 ## [0.1.14](https://github.com/carbonphyber/npm-module-automation-explore/compare/v0.1.13...v0.1.14) (2026-11-19)
 
 ### Bug Fixes
