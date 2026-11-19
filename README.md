@@ -5,7 +5,7 @@ A test repo to explore maximum CICD and GitHub automation for a JavaScript NPM r
 
 ## Changelog, Versioning, and Release CI
 NPM uses [Semantic Release](https://github.com/semantic-release/semantic-release).
-This repo requires all commit messages follow [Conventional Commits](https://www.conventionalcommits.org/) (enforced using [a GitHub Action](https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md)). This commit message rigidity allows the repo to automatically know how to increment the Release version number (for both GitHub Releases and the NPM version number) and to auto-generate the `CHANGELOG.md` file.
+This repo requires all commit messages follow [Conventional Commits](https://www.conventionalcommits.org/) (enforced using [a GitHub Action](https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md)). This commit message rigidity allows the repo to automatically know how to increment the Release version number (for both GitHub Releases and the NPM version number) and to auto-generate the `CHANGELOG.md` file,which is visible on the [Releases page](https://github.com/carbonphyber/npm-module-automation-explore/releases).
 
 ## GitHub Actions
 
