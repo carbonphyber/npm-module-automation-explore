@@ -1,3 +1,10 @@
+## [0.1.14](https://github.com/carbonphyber/npm-module-automation-explore/compare/v0.1.13...v0.1.14) (2026-11-19)
+
+### Bug Fixes
+
+* **actions:** update GItHub Actions to use Node26 and the newest versions of actions/checkout, actions/setup-node ([ffab4e0](https://github.com/carbonphyber/npm-module-automation-explore/commit/ffab4e0b0d3786bbace58ac9498fe2ef49915d5e))
+* ran `npm audit fix` on the repo ([4c7fc1e](https://github.com/carbonphyber/npm-module-automation-explore/commit/4c7fc1ec102da3c8bab6a9920b252a94a83aacb8))
+
 ## [0.1.13](https://github.com/carbonphyber/npm-module-automation-explore/compare/v0.1.12...v0.1.13) (2023-06-23)
 
 
