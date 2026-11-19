@@ -7,8 +7,20 @@ A test repo to explore maximum CICD and GitHub automation for a JavaScript NPM r
 NPM uses [Semantic Release](https://github.com/semantic-release/semantic-release).
 This repo requires all commit messages follow [Conventional Commits](https://www.conventionalcommits.org/) (enforced using [a GitHub Action](https://github.com/semantic-release/semantic-release/blob/master/docs/recipes/github-actions.md)). This commit message rigidity allows the repo to automatically know how to increment the Release version number (for both GitHub Releases and the NPM version number) and to auto-generate the `CHANGELOG.md` file.
 
+## GitHub Actions
+
+### Merge Action
+This repo has a GitHub Action to create a GitHub Release for every merge into the `origin/main` branch.
+
+The tests which run in this action must pass as a pre-requisite before this merge will cut a release.
+
+### Pull Request Action
+This repo has a GitHub Action to run tests for every Pull Request created.
+
+This automates the process of deciding whether the PR is healthy before any human / agent looks at the PR.
+
 ## Testing
-This repo uses Jest for unit testing.
+This repo uses [Jest](https://npmjs.com/jest) for unit testing.
 
 To run the tests, run the command `npm run test`.
 
